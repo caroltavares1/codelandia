@@ -1,0 +1,78 @@
+:root {
+    --bgSite: #d7d4ff;
+    --buttonColor: #846AFF;
+
+    --white: #ffffff;
+    --white300: #f9f9f9;
+
+    --title: #2b2b2b;
+    --text: #555555;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url("../fontes/Lato-Regular.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: Merriweather-Bold;
+    src: url("../fontes/Merriweather-Bold.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: Merriweather-Regular;
+    src: url("../fontes/Merriweather-Regular.ttf") format(truetype);
+}
+
+body{
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #F8F8FF;
+    width: 100%;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    padding: 30px 20px;
+    gap: 2.5em;
+
+
+}
+.header-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.header-text p {
+    line-height: 2.5rem;
+    font-size: 16px;
+    font-weight: 400;
+    width: 70%;
+}
+.text-highlight{
+    color: var(--buttonColor);
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--buttonColor);
+    color: white;
+    border-radius: 4%;
+    padding: 14px;
+    width: 170px;
+    height: 40px;
+    line-height: 21px;
+    font-weight: 700;
+
+}
