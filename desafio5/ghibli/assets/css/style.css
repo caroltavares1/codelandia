@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro&family=Archivo&family=Open+Sans&family=Roboto&display=swap');
+:root{
+    --button: #F1A5B1;
+
+    --dark-10: #0B0A0A;
+    --dark-20: #FFFFFF;
+}
+
+body{
+    color: var(--dark-20);
+    background: var(--dark-10) url("../images/background.png")  top/ cover no-repeat;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.logo{
+    align-self: center;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-self: center;
+    cursor: pointer;
+}
+
+.link:hover{
+    transform: scale(1.05);
+
+}
+
+main{
+    width: 100%;
+    max-width: 1200px;
+
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    gap: 2em;
+}
+
+.content-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+
+}
+
+.content-text h3 {
+    font-family: 'open sans', monospace;
+    font-weight: 700;
+}
+.content-text h1 {
+    font-family: 'andada pro', sans-serif;
+    font-weight: 800;
+    max-width: 300px;
+    margin-top: 5px;
+}
+.content-text p {
+    font-family: archivo, sans-serif;
+    max-width: 380px;
+    line-height: 2rem;
+}
+
+.buttons{
+    display: flex;
+    gap: 1rem;
+    width: 380px;
+}
+
+button{
+    width: 200px;
+    padding: 8px 3%;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.02);
+}
+
+#button-1{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    background-color: var(--button);
+    color: var(--dark-10);
+}
+#button-2{
+    background-color: transparent;
+    border: 1px solid var(--button);
+    color: white;
+}
